@@ -41,6 +41,7 @@ namespace Detyra_7
             else
                 Console.WriteLine("Vlera e zbritjes eshte " + v4 + ".");
             Console.ReadKey();
+            Console.WriteLine("Nese vlera eshte 99 me poshte kur kerkohet vlera pas zbritjes e jepni 099");
             Console.Write("Shkruaj numrin qe u paraqit pas zbritjes: ");
             string number2 = Console.ReadLine();
             Console.WriteLine("Vlera e kthyer mbrapa eshte :");
