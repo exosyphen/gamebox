@@ -1,0 +1,63 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Detyra_7
+{
+    class Program
+    {
+        public static string Reverse(string number)
+        {
+            char[] charArray = number.ToCharArray();
+            Array.Reverse(charArray);
+            return new string(charArray);
+        }
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Pershendetje,une jam exo");
+            Console.WriteLine("Une po parashikoj se numri i fundit ne Console do jete 1089");
+            Console.WriteLine("Per ta bere kete te mundur duhet te plotesohen disa kushte");
+            Console.WriteLine("Shkruaj nje numer 3-shifror qe nuk permban vleren 0");
+            Console.WriteLine("Si dhe te mos perseriten vlerat si p.sh 212 nuk bene sepse 2 po perseritet");
+            Console.WriteLine("------------------------------------------------------------------------------");
+            Console.Write("Shkruaj numrin (permbajuni kushteve) : ");
+            string number = Console.ReadLine();
+            Console.WriteLine("Vlera e kthyer mbrapa eshte :");
+            Console.WriteLine(Reverse(number));
+
+            Console.ReadLine();
+            int v1 = Int32.Parse(number);
+            int v2 = Int32.Parse(Reverse(number));
+            int v3 = v2 - v1;
+            int v4 = v1 - v2;
+            Console.Clear();
+            Console.WriteLine("Filloj zbritja");
+            Console.WriteLine("Ne rast se Vlera e kthyer eshte me e madhe se vlera e caktuar, ajo do zbritet");
+            if (v1 < v2)
+                Console.WriteLine("Vlera e zbritjes eshte " +v3+ ".");
+            else
+                Console.WriteLine("Vlera e zbritjes eshte " + v4 + ".");
+            Console.ReadKey();
+            Console.Write("Shkruaj numrin qe u paraqit pas zbritjes: ");
+            string number2 = Console.ReadLine();
+            Console.WriteLine("Vlera e kthyer mbrapa eshte :");
+            Console.WriteLine(Reverse(number2));
+
+            Console.ReadLine();
+            int v5 = Int32.Parse(number2);
+            int v6 = Int32.Parse(Reverse(number2));
+            int v7 = v6 + v5 ;
+            Console.Clear();
+            Console.WriteLine("Filloj mbledhja");
+            Console.WriteLine("Vlera e mbledhjes eshte " + v7 + ".");
+            Console.ReadKey();
+            Console.Clear();
+            Console.WriteLine("Pasi numri i fundit doli 1089, une parashikova te ardhmen");
+            Console.ReadLine();
+
+        }
+    }
+}
