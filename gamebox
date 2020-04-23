@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Detyra_7
+namespace Small_AI_Game
 {
     class Program
     {
@@ -34,13 +34,14 @@ namespace Detyra_7
             int v3 = v2 - v1;
             string PaddedResult = v3.ToString().PadLeft(3, '0');
             int v4 = v1 - v2;
+            string PaddedResult2 = v4.ToString().PadLeft(3, '0');
             Console.Clear();
             Console.WriteLine("Filloj zbritja");
             Console.WriteLine("Ne rast se Vlera e kthyer eshte me e madhe se vlera e caktuar, ajo do zbritet");
             if (v1 < v2)
                 Console.WriteLine("Vlera e zbritjes eshte " + PaddedResult + ".");
             else
-                Console.WriteLine("Vlera e zbritjes eshte " + PaddedResult + ".");
+                Console.WriteLine("Vlera e zbritjes eshte " + PaddedResult2 + ".");
             Console.ReadKey();
             Console.Write("Shkruaj numrin qe u paraqit pas zbritjes: ");
             string number2 = Console.ReadLine();
